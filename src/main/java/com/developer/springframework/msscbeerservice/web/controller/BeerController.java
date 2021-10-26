@@ -15,21 +15,21 @@ Create By Rohit on 25-10-2021
 public class BeerController {
 
     @GetMapping("/{beerId}")
-    public ResponseEntity<BeerDto>  getBeerByID(@PathVariable ("beerId") UUID beerId){
+    public ResponseEntity<BeerDto> getBeerByID(@PathVariable("beerId") UUID beerId) {
 
         //todo imp
         return new ResponseEntity<>(BeerDto.builder().build(), HttpStatus.OK);
     }
 
     @PostMapping()
-    public ResponseEntity saveNewBeer(@RequestBody BeerDto beerDto){
+    public ResponseEntity saveNewBeer(@RequestBody BeerDto beerDto) {
 
         //todo imp
         return new ResponseEntity(HttpStatus.CREATED);
     }
 
     @PutMapping("{/beerId}")
-    public ResponseEntity updateBeer(@PathVariable("beerId") UUID beerId,@RequestBody BeerDto beerDto){
+    public ResponseEntity updateBeer(@PathVariable("beerId") UUID beerId, @RequestBody BeerDto beerDto) {
 
         //todo imp
         return new ResponseEntity(HttpStatus.NO_CONTENT);
