@@ -61,7 +61,7 @@ class BeerControllerTest {
         e.getConstraintViolations().forEach(constraintVoilation -> {
             errors.add(constraintVoilation.getPropertyPath() + " : " + constraintVoilation.getMessage());
 
-        };
+        });
         return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
     }
 }
