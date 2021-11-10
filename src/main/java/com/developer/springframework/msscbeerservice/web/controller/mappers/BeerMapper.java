@@ -9,6 +9,6 @@ Created by Rohit on 02-11-21
  */
 @Mapper(uses = {DateMapper.class})
 public interface BeerMapper {
-    BeerDto beerDto(Beer beer);
-    Beer beer(BeerDto beerDto);
+    BeerDto beerToBeerDto(Beer beer);
+    Beer beerDtoToBeer(BeerDto beerDto);
 }
