@@ -3,6 +3,7 @@ package com.developer.springframework.msscbeerservice.web.controller;
 import com.developer.springframework.msscbeerservice.services.BeerService;
 import com.developer.springframework.msscbeerservice.web.model.BeerDto;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -14,6 +15,7 @@ import java.util.UUID;
 Create By Rohit on 25-10-2021
 Modified By Rohit on 10-11-2021
  */
+
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/beer/")
 @RestController
