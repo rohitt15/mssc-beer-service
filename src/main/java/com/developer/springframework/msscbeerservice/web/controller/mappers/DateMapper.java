@@ -1,11 +1,14 @@
 package com.developer.springframework.msscbeerservice.web.controller.mappers;
 
+import org.springframework.stereotype.Component;
+
 import java.sql.Timestamp;
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
 /*
 Created by Rohit on 02-11-21
  */
+@Component
 public class DateMapper {
     public OffsetDateTime asOffSetDateTime(Timestamp ts){
         if (ts !=null){

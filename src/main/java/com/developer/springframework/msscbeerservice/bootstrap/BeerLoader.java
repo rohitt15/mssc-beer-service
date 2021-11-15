@@ -12,7 +12,6 @@ import java.math.BigDecimal;
 Created By Rohit on 27-10-2021
 Modified By Rohit on 10-11-2021
  */
-@Component
 public class BeerLoader implements CommandLineRunner {
     public static final String BEER_1_UPC="123123123123L";
     public static final String BEER_2_UPC="234234234234L";
